@@ -17,7 +17,7 @@ This problem is well-known and can be fixed by replacing the prebuilt flex tool 
 Set the locale to C before executing make:
 
     LC_ALL=C make
-This solution is simple and most people use it. ***But*** sometimes it doesn't work and I recommend the soccend solution.
+This solution is simple and most people use it. **But** in many situations it doesn't work and I recommend the soccend solution.
 
 ### Solution 2
 
