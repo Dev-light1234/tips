@@ -1,2 +1,2 @@
 # tips
-Thinking of the time it took to find these simple things. lol
+Thinking of the time it took to find these simple things. 😂
