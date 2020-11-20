@@ -50,7 +50,7 @@ build/core/product_config.mk:234: *** Can not locate config makefile for product
 
 ### Description
 This error commonly appears when changing lineage device tree to an aosp-based rom's device tree.   
-In Lineage, lineage.mk is ***considered*** as lineage_<product>.mk. But originaly in AOSP(and aosp-based roms), the build system **only accpts** <rom name>_<product>.mk
+In Lineage, lineage.mk is ***considered*** as ```lineage_<product>.mk```. But originaly in AOSP(and aosp-based roms), the build system **only accpts** ```<rom name>_<product>.mk```.
 
 ### Solution
 Consider product via the AOSP way
