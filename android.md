@@ -37,3 +37,33 @@ mv flex flex-2.5.39
 ***
 <https://groups.google.com/forum/#!topic/android-building/0kzPnw3akxg>   
 <https://github.com/sonyxperiadev/bug_tracker/issues/136>
+
+Can not locate config makefile for product
+----
+
+### Error code
+
+```
+build/core/product_config.mk:234: *** Can not locate config makefile for product
+```
+
+### Description
+This error commonly appears when changing lineage device tree to an aosp-based rom's device tree.   
+In Lineage, lineage.mk is ***considered*** as lineage_<product>.mk. But originaly in AOSP(and aosp-based roms), the build system **only accpts** <rom name>_<product>.mk
+
+### Solution
+Consider product via the AOSP way
+   
+Ex:   
+   
+AndroidProducts.mk 
+```
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aospa_ef52.mk
+```
+lineage.mk → aospa_ef52.mk 
+```
+File renamed without changes.
+```
+***
+<https://github.com/LineageOS/android_device_oneplus_oneplus2/commit/23b1a57ee6e8afd46a4b1ffcae13c94146f47ece>
